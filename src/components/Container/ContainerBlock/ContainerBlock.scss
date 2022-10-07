@@ -1,0 +1,122 @@
+@import '../../../assets/styles/variables.scss';
+
+.ContainerBlock
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ContainerBlock_Header
+{
+    min-width: 150px;
+    height: 100px;
+    margin: $margin-10px;
+    font-size: 0.7em;
+}
+hr
+{
+    height: 2px;
+    border: $border-none;
+    width: 80px;
+    background: $custom-background-red;
+}
+.Header_Button_visible
+{
+    display: $display-none;
+}
+.Header_Icon
+{
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+.ContainerBlock_Title
+{
+    margin-top: 10px;
+    font-size: 2em;
+    width: 100px;
+}
+.ContainerBlock_List
+{
+    width: 300px;
+    min-height: 200px;
+    margin: 10px 8px 10px 10px;
+    font-size: $font-size-1em;
+    display: $display-flex;
+    align-self: flex-end;
+}
+.ContainerBlock_List_media
+{
+    min-width: 200px;
+    min-height: 100px;
+    margin: $margin-10px;
+    font-size: $font-size-1em;
+    display: $display-flex;
+}
+@media only screen and (max-width: 500px)
+{
+    .ContainerBlock_List
+    {
+        display: $display-none;
+    }
+    .ContainerBlock_Header
+    {
+        background: $custom-background-grey;
+        max-height: 60px;
+        width: 100%;
+        display: $display-flex;
+        align-items: center;
+        &:hover
+        {
+            background: $custom-background-red;
+            opacity: 0.9;
+        }
+    }
+    .Header_Button_visible
+    {
+        display: block;
+        margin: 1%;
+        padding: 5%;
+        max-width: 60px;
+        background: none;
+        cursor: pointer;
+        border: $border-none;
+    }
+    hr
+    {
+        display: $display-none;
+    }
+    .ContainerBlock_Header
+    {
+        padding-bottom: 10px;
+    }
+    .ContainerBlock
+    {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 657px) and (max-width: 975px)
+{
+    .ContainerBlock_List
+    {
+        min-width: 60%;
+        min-height: 100px;
+        margin: 10px 8px 10px 10px;
+        font-size: $font-size-1em;
+        display: $display-flex;
+        align-self: flex-end;
+    }
+    .ContainerBlock
+    {
+        min-width: 80%;
+    }
+}
+@media only screen and (min-width: 976px)
+{
+    .ContainerBlock
+    {
+        display: $display-flex;
+        justify-content: space-between;
+        min-width: 50%;
+    }
+}

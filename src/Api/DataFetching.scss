@@ -1,0 +1,25 @@
+@import '../assets/styles/variables.scss';
+
+.Disciplines
+{
+    display: $display-flex;
+    width: 90%;
+}
+ul
+{
+    width: 100%;
+    list-style: none;
+}
+li
+{
+    margin-bottom: 1.5%;
+    margin-left: 4.5%;
+}
+li::before
+{
+    content: "•";
+    color: $custom-background-red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

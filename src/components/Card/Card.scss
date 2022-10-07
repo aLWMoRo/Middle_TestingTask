@@ -1,0 +1,99 @@
+@import '../../assets/styles/variables.scss';
+
+.Card
+{
+    margin: 0% 1%;
+    min-height: 300px;
+}
+.Card_Conatiner
+{
+    display: $display-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Conatiner_FolderCornerCard 
+{
+	position: relative;
+    margin: $margin-10px;
+	min-width: 20em;
+    max-width: 25em;
+    min-height: 150px;
+	background: linear-gradient(-150deg, transparent 1.5em, $custom-background-red 0);
+	color: $color-white;
+	font: 100%/1.6 Baskerville, Palatino, serif;
+}
+.Conatiner_FolderCornerCard::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+    right: 0;
+	width: 1.73em;
+    height: 3em;
+	background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.4));
+	transform: translateY(-1.3em) rotate(-30deg);
+	transform-origin: bottom right;
+	border-bottom-left-radius: .1em;
+	box-shadow: -.1em .2em .3em -.1em rgba(0,0,0,.15)
+}
+.Card_Title
+{
+    width: 100%;
+    font-size: 0.7em;
+}
+.Title_Text
+{
+    font-size: 1.9em;
+    width: 75%;
+    margin: 1em 1em 0em 1.5em;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    display: $display-flex;
+    justify-content: $justify-content-center;
+}
+.Card_Description
+{
+    font-size: $font-size-1em;
+    width: 90%;
+    height: auto;
+    margin: 1em 1em 3em 2em;
+    display: $display-flex;
+}
+.Conatiner_BlackCard
+{
+    position: relative;
+    margin: $margin-10px;
+	min-width: 20em;
+    max-width: 25em;
+    min-height: 100px;
+	background: $custom-background-black;
+	color: $color-white;
+}
+@media only screen and (min-width: 440px) and (max-width: 858px)
+{
+    .Card_Conatiner
+    {
+        display: $display-flex;
+        justify-content: $justify-content-center;
+    }
+    .Conatiner_FolderCornerCard
+    {
+        position: relative;
+        margin: $margin-10px;
+        min-width: 18em;
+        max-width: 24em;
+        min-height: 100px;
+        background: linear-gradient(-150deg, transparent 1.5em, $custom-background-red 0);
+        color: $color-white;
+        font: 100%/1.6 Baskerville, Palatino, serif;
+    }
+    .Conatiner_BlackCard
+    {
+        position: relative;
+        margin: $margin-10px;
+        min-width: 18em;
+        max-width: 24em;
+        min-height: 100px;
+        background: $custom-background-black;
+        color: $color-white;
+    }
+}

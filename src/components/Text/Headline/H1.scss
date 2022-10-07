@@ -1,0 +1,9 @@
+@import '../../../assets/styles/variables.scss';
+
+h1
+{
+    font-weight: $font-weight-700;
+    margin: 2% 0% 10% 2%;
+    display: $display-flex;
+    justify-content: $justify-content-center;
+}
